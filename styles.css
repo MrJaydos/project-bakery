@@ -10,6 +10,27 @@ html {
     font-size: 16px;
 }
 
+/* Universal Button Styling */
+
+button {
+    border-radius: 10px;
+    background-color: maroon;
+    color: rgb(232, 232, 232);
+    padding: 10px 20px;
+    border: 0;
+    font-weight: bold;
+}
+
+button:hover {
+    font-weight: bolder;
+    background-color: rgb(74, 0, 0);
+    box-shadow: 1px 1px 5px 0 rgba(63, 0, 0, 0.6);
+}
+
+button:active {
+    text-decoration: underline;
+}
+
 /* Header & Nav Bar Styles */
 
 header {
@@ -141,11 +162,7 @@ header a:hover, header a:focus-visible {
     top: 72px; /* Offset for sticky header */
 }
 
-button {
-    border-radius: 10px;
-    background-color: maroon;
-    color: rgb(232, 232, 232);
-}
+
 /* Hero Section */
 div.hero {
     width: 100%;
@@ -153,13 +170,20 @@ div.hero {
     background-image: url('./images/bakery-hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+
 }
 
 .cta {
-    background-color: maroon;
-    height: 100px;
-    width: 25%;
-
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    height: auto;
+    width: 44%;
+    margin: auto 5rem;
+    text-align: center;
 }
 
-/*  */
+.cta h2,h3,p,button {
+    margin-bottom: 20px;
+}
+/* Card Section */
