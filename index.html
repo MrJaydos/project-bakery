@@ -2,45 +2,74 @@
 <html>
   <head>
     <link href="./styles.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
-    <meta charset="UTF-8">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
   </head>
   <body>
+    <!-- Header & Nav Bar HTML -->
     <header>
       <div class="header-content">
         <div class="logo">
-            <h1>Bakery Logo</h1>
+          <h1>Bakery Logo</h1>
         </div>
-        <input type="checkbox" id="nav-toggle"/>
-        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation" role="button"><span></span><span></span><span></span></label>
+        <input type="checkbox" id="nav-toggle" />
+        <label
+          for="nav-toggle"
+          class="nav-toggle-label"
+          aria-label="Toggle navigation"
+          role="button"
+          ><span></span><span></span><span></span
+        ></label>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Top Picks</a></li>
-                <li><a href="#">Bakers</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Top Picks</a></li>
+            <li><a href="#">Bakers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </header>
     <main class="main-content">
+      <!-- Hero Section -->
+
       <div class="hero">
         <div class="cta">
-          <h1>
-            Call to Action
-          </h1>
-          <h2>
-            You too could have bread.
-          </h2>
+          <h1>Call to Action</h1>
+          <h2>You too could have bread.</h2>
           <button>Learn more!</button>
         </div>
       </div>
-      <div>
-        
+      <!-- Card Section -->
+      <div class="card-section">
+        <h2>Our Top Picks</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./images/bread.jpg" alt="Picture of Bread" />
+            <h3>Bread</h3>
+            <p>So delicous you will smell it through the screen!</p>
+          </div>
+          <div class="card">
+            <img src="./images/pasteries.jpg" alt="Picture of Pasteries" />
+            <h3>Pastries</h3>
+            <p>So delicous you will smell it through the screen!</p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/savory.webp"
+              alt="Picture of Savory Bakery Items"
+            />
+            <h3>Savory Items</h3>
+            <p>So delicous you will smell it through the screen!</p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
-
+      <p>Copyright Jayden Dickinson 2025</p>
     </footer>
   </body>
 </html>

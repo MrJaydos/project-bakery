@@ -146,13 +146,20 @@ button {
     background-color: maroon;
     color: rgb(232, 232, 232);
 }
-
+/* Hero Section */
 div.hero {
     width: 100%;
     height: 500px;
     background-image: url('./images/bakery-hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    
+}
+
+.cta {
+    background-color: maroon;
+    height: 100px;
+    width: 25%;
 
 }
+
+/*  */
