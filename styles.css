@@ -166,6 +166,7 @@ header a:focus-visible {
   position: relative;
   top: 72px;
   /* Offset for sticky header */
+  padding-bottom: 4rem;
 }
 
 /* Hero Section */
@@ -225,7 +226,8 @@ button {
   transition: transform 0.3s ease;
 }
 
-.card img:hover {
+.card:hover img,
+.card:hover .overlay {
   transform: scale(1.05);
 }
 
@@ -266,5 +268,10 @@ button {
 /* Footer Styling */
 
 footer {
-
+  display: block;
+  width: 100%;
+  padding: 2rem 24px;
+  background: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  box-sizing: border-box;
 }
