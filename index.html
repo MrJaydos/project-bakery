@@ -9,20 +9,20 @@
 
 <body>
   <!-- Header & Nav Bar HTML -->
-  <header>
+  <header id="header">
     <div class="header-content">
       <div class="logo">
-        <h1>Bakery Logo</h1>
+        <h1><a href="./index.html">Bakery Logo</a></h1>
       </div>
       <input type="checkbox" id="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation"
         role="button"><span></span><span></span><span></span></label>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Top Picks</a></li>
-          <li><a href="#">Bakers</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#top-picks">Top Picks</a></li>
+          <li><a href="#bakers">Bakers</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -30,7 +30,7 @@
   <main class="main-content">
     <!-- Hero Section -->
 
-    <div class="hero">
+    <div class="hero" id="hero">
       <div class="cta">
         <h1>Call to Action</h1>
         <h2>You too could have bread.</h2>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <!-- Our Top Picks Card Section -->
-    <div class="card-section" id="Top Picks">
+    <div class="card-section" id="top-picks">
       <h2>Our Top Picks</h2>
       <div class="card-container">
         <div class="card">
@@ -74,7 +74,7 @@
       </div>
     </div>
     <!-- Our Staff Section -->
-    <div class="card-section" id="Bakers">
+    <div class="card-section" id="bakers">
       <h2>Our Bakers</h2>
       <div class="card-container">
         <div class="card">
@@ -111,6 +111,25 @@
           <p>So delicous you will smell it through the screen!</p>
 
         </div>
+      </div>
+    </div>
+    <div id="contact-us">
+      <div class="form-image">
+        <img src="./images/bakery-hero.jpg" alt="Bakery Image">
+      </div>
+      <div class="contact-form">
+        <form>
+          <h2>Contact us</h2>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required minlength="2" maxlength="20" size="20">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required minlength="2" maxlength="20" size="20">
+          <label for="phone-number">Phone Number:</label>
+          <input type="number" id="phone-number" name="phone-number" required minlength="8" maxlength="10" size="20">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required minlength="5" maxlength="50" size="35">
+          <button>Send Message</button>
+        </form>
       </div>
     </div>
   </main>

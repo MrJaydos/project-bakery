@@ -9,6 +9,11 @@ body {
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+#top-picks {
+  scroll-margin-top: 80px;
 }
 
 /* Universal Button Styling */
@@ -184,6 +189,7 @@ div.hero {
   border-radius: 10px;
   height: auto;
   width: 44%;
+  max-width: 400px;
   margin: auto 5rem;
   text-align: center;
 }
@@ -207,6 +213,7 @@ button {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 15px;
 }
 
 .card {
