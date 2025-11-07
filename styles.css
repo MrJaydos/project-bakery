@@ -203,6 +203,8 @@ button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
@@ -223,4 +225,13 @@ button {
 
 .card img:hover {
     transform: scale(1.05);
+}
+
+.card button {
+    display: inline-block;
+    align-self: center;
+    margin-top: 10px;
+    width: auto;
+    white-space: nowrap;
+    text-align: center;
 }
