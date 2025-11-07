@@ -1,189 +1,195 @@
 /* Style Resets & Universal Styles */
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 /* Universal Button Styling */
 
 button {
-    border-radius: 10px;
-    background-color: maroon;
-    color: rgb(232, 232, 232);
-    padding: 10px 20px;
-    border: 0;
-    font-weight: bold;
+  border-radius: 10px;
+  background-color: maroon;
+  color: rgb(232, 232, 232);
+  padding: 10px 20px;
+  border: 0;
+  font-weight: bold;
 }
 
 button:hover {
-    font-weight: bolder;
-    background-color: rgb(74, 0, 0);
-    box-shadow: 1px 1px 5px 0 rgba(63, 0, 0, 0.6);
+  font-weight: bolder;
+  background-color: rgb(74, 0, 0);
+  box-shadow: 1px 1px 5px 0 rgba(63, 0, 0, 0.6);
 }
 
 button:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Header & Nav Bar Styles */
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 72px;
-    background-color: whitesmoke;
-    border-bottom: 1px solid #e5e5e5;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  background-color: whitesmoke;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  z-index: 100;
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    height: 72px;
-    margin: 0 auto;
-    padding: 0 24px;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 72px;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 24px;
 }
 
 header ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 header li {
-    list-style: none;
+  list-style: none;
 }
 
 .logo h1 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 header a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    padding: 8px 10px;
-    border-radius: 6px;
-    transition: background-color .2s ease, color .2s ease;
-
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-header a:hover, header a:focus-visible {
-    background-color: #f4f4f4;
-    outline: none;
+header a:hover,
+header a:focus-visible {
+  background-color: #f4f4f4;
+  outline: none;
 }
 
 /* Hamburger (hidden on desktop) */
-#nav-toggle { display: none; }
+#nav-toggle {
+  display: none;
+}
 
 .nav-toggle-label {
-    display: none;
-    cursor: pointer;
-    line-height: 1;
-    padding: 8px 10px;
-    border-radius: 6px;
-    user-select: none;
+  display: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  user-select: none;
 }
 
 .nav-toggle-label span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: #333;
-    margin: 5px 0;
-    transition: transform .2s ease;
-    transform-origin: center;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  margin: 5px 0;
+  transition: transform 0.2s ease;
+  transform-origin: center;
 }
 
 /* Animate hamburger into an 'x' when menu is open */
 #nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-    transform: rotate(45deg) translateY(10px);
+  transform: rotate(45deg) translateY(10px);
 }
 
 #nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 #nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-10px);
+  transform: rotate(-45deg) translateY(-10px);
 }
 
-
 @media screen and (max-width: 760px) {
-    nav {
-        position: absolute;
-        top: 72px;
-        left: 0;
-        width: 100%;
-        background: #ffffff;
-        border-bottom: 1px solid #e5e5e5;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.06);
-        display: none;
-    }
+  nav {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    display: none;
+  }
 
-    header ul {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-    }
+  header ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
 
-    header li a {
-        display: block;
-        padding: 14px 24px;
-        border-radius: 0;
-    }
+  header li a {
+    display: block;
+    padding: 14px 24px;
+    border-radius: 0;
+  }
 
-    .nav-toggle-label { display: block; }
+  .nav-toggle-label {
+    display: block;
+  }
 
-    /* Show nav when checkbox checked */
-    #nav-toggle:checked + label + nav { display: block; }
-    
+  /* Show nav when checkbox checked */
+  #nav-toggle:checked + label + nav {
+    display: block;
+  }
 }
 
 .main-content {
-    position: relative;
-    top: 72px; /* Offset for sticky header */
+  position: relative;
+  top: 72px; /* Offset for sticky header */
 }
-
 
 /* Hero Section */
 div.hero {
-    width: 100%;
-    height: 500px;
-    background-image: url('./images/bakery-hero.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-
+  width: 100%;
+  height: 500px;
+  background-image: url("./images/bakery-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
 }
 
 .cta {
-    background-color: rgb(232, 232, 232);
-    border-radius: 10px;
-    height: auto;
-    width: 44%;
-    margin: auto 5rem;
-    text-align: center;
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+  height: auto;
+  width: 44%;
+  margin: auto 5rem;
+  text-align: center;
 }
 
-.cta h2,h3,p,button {
-    margin-bottom: 20px;
+.cta h2,
+h3,
+p,
+button {
+  margin-bottom: 20px;
 }
 /* Card Section */
