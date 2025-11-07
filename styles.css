@@ -192,4 +192,26 @@ p,
 button {
   margin-bottom: 20px;
 }
+
 /* Card Section */
+
+.card-section {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.card img {
+    height: 200px;
+    width: auto;
+}
