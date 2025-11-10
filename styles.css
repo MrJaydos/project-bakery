@@ -279,9 +279,13 @@ button {
   min-height: 500px;
 }
 
+.contact-us-image {
+  height: 100%;
+}
+
 .contact-us-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -290,6 +294,8 @@ button {
   display: block;
   padding: 2rem;
   background: #fff;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-form form {
